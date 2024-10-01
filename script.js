@@ -1,3 +1,21 @@
+
+// FAQ SCRIPT
+document.querySelectorAll('.accordion-header').forEach(header => {
+    header.addEventListener('click', () => {
+        const content = header.nextElementSibling;
+        const isOpen = content.style.display === 'block';
+
+        // Close all other open content
+        document.querySelectorAll('.accordion-content').forEach(item => {
+            item.style.display = 'none';
+        });
+
+        // Toggle when clicked on
+        content.style.display = isOpen ? 'none' : 'block';
+    });
+});
+
+
 // Select the navbar by its ID
 const navbar = document.getElementById('nav');
 
