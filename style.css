@@ -11,16 +11,17 @@
     src: url(/fonts/Lora/Lora-VariableFont.ttf);
 }
 
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 body {
     position: relative;
     background-color: #F6F2F1;
 }
-
 
 button {
     cursor: pointer;
@@ -29,6 +30,388 @@ button {
 /* FONTS */
 /* Inter */
 /* Lora */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lora:wght@400;500;700&display=swap');
+
+/* Hero Section */
+.hero_section_img {
+    background-image: url('./assets/hero_image.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 43.375rem;
+    position: relative;
+    padding: 0 0.5rem;
+}
+
+.logo {
+    width: 149.13px;
+    height: 52.47px;
+}
+
+#nav {
+    transition: background-color 0.3s ease !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+/* Custom button styling */
+.custom-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1A1A1A !important;
+    color: white !important;
+    padding: 15px 30px !important;
+    border-radius: 30px !important;
+    font-size: 18px;
+    text-decoration: none;
+    border: 2px solid white !important;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    box-shadow: 4px 2px 4px #F20034 !important;
+}
+
+/* Arrow styling */
+.custom-button .arrow {
+    margin-left: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effects */
+.custom-button:hover {
+    background-color: white;
+    /* Change to white background */
+    color: #000;
+    /* Black text */
+}
+
+.custom-button:hover .arrow {
+    transform: translateX(5px);
+    /* Move arrow to the right */
+}
+
+.custom-button:hover {
+    border-color: black;
+    /* Change border color on hover */
+}
+
+/* Hero Texts */
+.words_div {
+    position: absolute;
+    bottom: 1rem;
+    padding: 0.75rem;
+}
+
+.banner_text {
+    font-size: 5.25rem;
+    line-height: 5.25rem;
+    display: inline;
+    font-family: 'Lora', sans-serif;
+}
+
+.banner_paragraph {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+}
+
+.custom_btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff !important;
+    color: #1A1A1A !important;
+    padding: 15px 30px !important;
+    border-radius: 30px !important;
+    font-size: 18px;
+    text-decoration: none;
+    border: 2px solid #1A1A1A !important;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    box-shadow: 4px 2px 4px #F20034 !important;
+    margin-top: -2rem;
+    margin-left: 1rem;
+}
+
+/* Arrow styling */
+.custom_btn .arrow {
+    margin-left: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effects */
+.custom_btn:hover {
+    background-color: #1A1A1A;
+    /* Change to white background */
+    color: #ffffff;
+    /* Black text */
+}
+
+.custom_btn:hover .arrow {
+    transform: translateX(5px);
+    /* Move arrow to the right */
+}
+
+.custom_btn:hover {
+    border-color: black;
+    /* Change border color on hover */
+}
+
+/* Empowering Innovators */
+.color_red {
+    color: #F20034 !important;
+}
+
+.color_orange {
+    color: #FF611E !important;
+}
+
+.big_text {
+    font-size: 6rem;
+    font-weight: 500;
+    line-height: 6rem;
+    font-style: italic;
+    font-family: 'Lora', sans-serif;
+}
+
+.innovators {
+    padding: 0.625rem !important;
+    margin-top: 2rem;
+    background-image: url('./assets/left_vector.svg') !important;
+    background-size: contain !important;
+    background-position: left !important;
+    background-repeat: no-repeat !important;
+}
+
+.innovators_right {
+    background-image: url('./assets/right_vector.svg') !important;
+    background-size: contain !important;
+    background-position: bottom right !important;
+    background-repeat: no-repeat !important;
+}
+
+.star_img {
+    margin-top: -6.5rem;
+    margin-left: -4.5rem;
+    width: 5.375rem;
+    height: 5.375rem;
+}
+
+.some_cards {
+    margin-top: 4rem;
+    padding: 0.625rem !important;
+}
+
+
+
+.img_cards {
+    width: 24.125rem;
+    height: 27.0625rem;
+}
+
+.cards_titles {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 6rem;
+    font-family: 'Lora', sans-serif;
+}
+
+.cards_para {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+    color: #726664;
+    overflow-wrap: break-word !important;
+    font-family: 'Inter', sans-serif;
+}
+
+.impact {
+    margin-top: 2rem;
+}
+
+.row_margin {
+    margin-top: 3rem;
+}
+
+.margin_top {
+    margin-top: 3rem;
+}
+
+/* Upcoming events Section */
+.dark_bg {
+    background-image: linear-gradient(#000000ce, #000000ce), url('./assets/dark_bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1rem;
+    margin-top: 5rem;
+}
+
+.u_event {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #F20034;
+    font-family: 'Inter', sans-serif;
+}
+
+.level_up {
+    font-weight: 500;
+    font-style: italic;
+    font-size: 3.75rem;
+    line-height: 4.375rem;
+    overflow-wrap: none;
+    font-family: 'Lora', sans-serif;
+}
+
+.red_ziggy {
+    margin-left: -12rem !important;
+    transform: translateY(3rem);
+}
+
+.break {}
+
+.margin_down {
+    margin-top: 5rem !important;
+}
+
+.left_text {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+}
+
+.big_title {
+    font-size: 5.125rem;
+    font-weight: 600;
+    line-height: 3.875rem;
+    color: #FFFFFFB2;
+    font-family: 'Lora', sans-serif;
+}
+
+.small_header {
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+}
+
+.margin {
+    margin-top: 1rem !important;
+}
+
+.images {
+    display: flex;
+    justify-content: flex-end;
+    flex: 0 0 calc(50% - 1rem);
+    flex-wrap: wrap;
+    gap: 1rem;
+    overflow: hidden;
+    height: 69.3125rem;
+}
+
+.image_card {
+    width: 13.75rem;
+    height: 29.4375rem;
+    display: inline;
+}
+
+.mentorship {
+    margin-top: -11rem;
+}
+
+.interactive {
+    margin-top: -10rem;
+}
+
+.networking {
+    display: block;
+}
+
+.design_thinking {
+    transform: translateY(-3rem);
+}
+
+/* Responsive design to ensure button looks good on all devices */
+@media (max-width: 576px) {
+    .custom-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .custom_btn {
+        font-size: 16px;
+        padding: 10px 20px;
+        margin-top: 1.5rem;
+    }
+
+    .images {
+        /* display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.625rem; */
+        padding: 0.75rem;
+    }
+
+    .mentorship {
+        margin-left: auto;
+        transform: translateY(4rem);
+    }
+
+    .interactive {
+        margin-left: auto;
+        transform: translateY(4rem);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .card_wrapper {
+        width: 97%;
+        margin: 1rem auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .banner_text {
+        font-size: 2.25rem;
+        line-height: 2.25rem;
+    }
+
+    .banner_paragraph {
+        font-size: 1rem;
+    }
+
+    .big_text {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .star_img {
+        display: none;
+    }
+
+    .red_ziggy {
+        display: none;
+    }
+
+    .margin {
+        text-align: center;
+    }
+
+    .images {
+        margin-top: 3rem !important;
+        justify-content: normal;
+        min-height: 69.3125rem;
+        overflow: auto;
+    }
+}
 
 /* TESTIMONIALS STYLING */
 .testimonial {
@@ -627,3 +1010,4 @@ footer hr {
 }
 
 /* RESPONSIVENESS ENDS HERE */
+
