@@ -888,10 +888,7 @@ footer hr {
 
 
     /* BACKGROUND VECTOR IMAGE RESPONSIVENESS */
-    .net-arrow-right {
-        width: 50%;
-    }
-    .net-arrow-left {
+    .net-arrow {
         width: 50%;
     }
 
