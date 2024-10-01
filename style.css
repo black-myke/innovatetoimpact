@@ -1,0 +1,629 @@
+@font-face {
+    font-family: Inter;
+    src: url(./fonts/Inter/Inter-VariableFont.ttf);
+}
+@font-face {
+    font-family: Lora-Italic;
+    src: url(/fonts/Lora/Lora-Italic-VariableFont.ttf);
+}
+@font-face {
+    font-family: Lora-Normal;
+    src: url(/fonts/Lora/Lora-VariableFont.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    position: relative;
+    background-color: #F6F2F1;
+}
+
+
+button {
+    cursor: pointer;
+}
+
+/* FONTS */
+/* Inter */
+/* Lora */
+
+/* TESTIMONIALS STYLING */
+.testimonial {
+    position: relative;
+    margin: 50px 50px 100px 50px;
+}
+.testimonial h2 {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 1.1200000047683716px;
+    color: #000000;
+    text-align: center;
+}
+
+.testimonial h3 {
+    font-family: Lora-Normal;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 80px;
+    color: #000000;
+    width: 900px;
+    text-align: center;
+    margin:20px auto;
+}
+
+.testimonial h3 span {
+    font-family: Lora-Italic;
+    font-weight: 600;
+    color: #F35636;
+}
+
+.testimonial-video {
+    background-color: #000000;
+    width: 700px;
+    height: 382px;
+    border-radius: 20px;
+    display: block;
+    margin: 50px auto;
+}
+
+.testimonial-video iframe {
+    height: 100%;
+    display: block;
+    margin: auto;
+    border: 0;
+}
+
+.test-star {
+    position: absolute;
+}
+.red-star-1 {
+    left: 100px;
+    top: 0;
+}
+.red-star-2 {
+    right: 120px;
+    top: 350px;
+}
+.black-star-1 {
+    right: 50px;
+    top: 100px;
+}
+.black-star-2 {
+    left: 100px;
+    top: 500px;
+}
+
+.test-net-arrow-left {
+    left: 0;
+    bottom: 2950px;
+}
+.test-net-arrow-right {
+    right: 0;
+    bottom: 2650px;
+}
+
+
+
+
+/* EVENT STYLING */
+.events {
+    margin: 50px 100px;
+}
+
+.events h2 {
+    font-family: Lora-Normal;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 80px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.event-img {
+    width: 534px;
+}
+
+.event-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+
+.event-text h3 {
+    font-family: Lora-Normal;
+    font-size: 45.75px;
+    font-weight: 500;
+    line-height: 72px;
+    text-align: left;
+}
+
+.event-text p {
+    font-family: Inter;
+    font-size: 19.06px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    color: #726664;
+    width: 353px;
+}
+
+.event-btn {
+    font-family: Inter;
+    font-size: 15.13px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-align: center;
+    width: 195.69px;
+    height: 52px;
+    padding: 14px 16px;
+    margin-top: 50px;
+    border-radius: 27px;
+    border: 1px;
+    background: #1A1A1A;
+    border: 1px solid #FFFFFF;
+    box-shadow: 2px 3px 0px 0px #F20034;
+}
+
+.event-btn:hover {
+    border: 0;
+    box-shadow: 2px 3px 0px 0px #ffffff;
+}
+
+.event-btn span {
+    margin-left: 50px;
+}
+
+
+/* BACKGROUND VECTOR IMAGE */
+.net-arrow {
+    position: absolute;
+    z-index: -1;
+    height: 1319px;
+}
+.net-arrow-right {
+    right: 0;
+    bottom: 1100px;
+}
+.net-arrow-left {
+    left: 0;
+    bottom: 1500px;
+}
+
+
+/* COMMUNITY SECTION */
+.community {
+    margin: 200px 100px 50px 100px;
+}
+
+.community-text {
+    text-align: center;
+}
+.community-text h2 {
+    font-family: Lora-Normal;
+    font-size: 58px;
+    font-weight: 400;
+    line-height: 66px;
+    letter-spacing: -1.5px;
+    text-align: center;
+}
+.community-text p {
+    font-family: Inter;
+    width: 1112px;
+    display: block;
+    margin: auto;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 23.4px;
+    letter-spacing: -0.5px;
+    color: #00000080;
+}
+
+.community-btn {
+    font-family: Lora-Normal;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.8px;
+    letter-spacing: -0.36000001430511475px;
+    display: block;
+    margin: auto;
+    width: 248.75px;
+    height: 56.8px;
+    padding: 13px 26px;
+    border-radius: 30px;
+    color: #FFFFFF;
+    border: 2px;
+    background: #1A1A1A;
+    border: 2px solid #FFFFFF;
+    box-shadow: 3px 3px 0px 0px #F20034;
+    margin-top: 30px;
+}
+.community-btn:hover {
+    border: 0;
+    box-shadow: 3px 3px 0px 0px #ffffff;
+}
+.community-btn span {
+    margin-left: 15px;
+}
+
+.comm-img-1 {
+    width: 650px;
+    height: 750px;
+    border-radius: 50px;
+}
+.comm-img-2 {
+    width: 300px;
+    height: 380px;
+}
+.comm-img-3 {
+    width: 500px;
+    height: 360px;
+}
+
+.comm-img {
+    display: block;
+    margin: auto;
+    padding: 10px;
+    object-fit: cover;
+}
+.community-img {
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+.img-shape-grp {
+    display: flex;
+}
+
+
+
+/* FAQ STYLING */
+.faq {
+    display: flex;
+    margin: 50px 100px;
+    justify-content: space-between;
+}
+
+.faq-heading {
+    font-family: Lora-Normal;
+    width: 234px;
+    font-size: 41.94px;
+    font-weight: 400;
+    line-height: 52px;
+    letter-spacing: -1.3200000524520874px;
+    color: #1A1A1A;
+}
+
+.faq-accordion {
+    width: 700px;
+}
+
+.accordion-header {
+    font-family: Inter;
+    width: 700px;
+    height: 69px;
+    border-bottom: 1px solid #1A1A1A26;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 19.06px;
+    font-weight: 700;
+    line-height: 28px;
+    cursor: pointer;
+}
+.accordion-header span:nth-child(1) {
+    width: 80%;
+}
+
+.accordion-content {
+    display: none;
+    padding: 15px;
+    border-bottom: 1px solid #1A1A1A26;
+    border-top: none;
+}
+
+
+
+
+
+/* FOOTER STYLING */
+footer {
+    background-color: #000000;
+    color: #F3F4F6;
+    padding: 100px 100px 30px 100px;
+}
+footer a {
+    color: #F3F4F6;
+    text-decoration: none;
+    display: block;
+    font-weight: 400;
+}
+footer img {
+    height: 58px;
+}
+footer hr {
+    margin: 20px 0;
+}
+
+.footer-part-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.footer-links-1 a {
+    line-height: 2;
+    font-family: Lora-Normal;
+}
+.footer-links-2 a {
+    line-height: 2;
+    font-family: Lora-Normal;
+}
+
+.footer-questions {
+    font-family: Inter;
+    line-height: 22px;
+    color: #F3F4F6;
+}
+.footer-questions h5{
+    font-size: 20px;
+    font-weight: 300;
+}
+.footer-questions p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.footer-questions-btn {
+    font-family: Lora-Normal;
+    width: 240px;
+    height: 48px;
+    margin: 20px 0;
+    background-color: #F20034;
+    gap: 3px;
+    font-size: 18px;
+    border-radius: 30px;
+    border: 2px solid #FFFFF3;
+    box-shadow: 3px 3px 0px 0px #FFFFFF;
+}
+
+.footer-questions-btn:hover {
+    border: 0;
+    box-shadow: 3px 3px 0px 0px #000000;
+}
+
+.footer-part-2 {
+    font-family: Inter;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #F3F4F6B2;
+}
+
+.terms-policy {
+    display: flex;
+}
+
+.terms-policy a {
+    margin: 0 20px;
+    color: #F3F4F6B2;
+}
+
+.follow-us {
+    font-family: Inter;
+    font-size: 19.22px;
+    font-weight: 300;
+    line-height: 28px;
+    text-align: left;
+    color: #F3F4F6B2;
+}
+
+
+
+/* RESPONSIVENESS STARTS HERE */
+@media (max-width: 450px) {
+    /* TESTIMONIAL RESPONSIVENESS */
+    .testimonial {
+        margin: 50px 10px;
+    }
+
+    .testimonial h3 {
+        font-size: 40px;
+        line-height: 40px;
+        width: 350px;
+    }
+
+    .testimonial-video {
+        width: 350px;
+        height: 200px;
+    }
+
+    .testimonial-video iframe {
+        width: 50%;
+    }
+
+    .red-star-1 {
+        left: 10px;
+        top: 0;
+    }
+    .red-star-2 {
+        right: 0;
+        top: 250px;
+    }
+
+    .black-star-1 {
+        right: 50px;
+        top: 100px;
+    }
+    .black-star-2 {
+        left: 25px;
+        top: 350px;
+    }
+
+
+    /* EVENTS RESPONSIVENSS */
+    .events {
+        margin: 50px 10px;
+    }
+
+    .events h2 {
+        font-size: 45px;
+        line-height: 50px;
+        margin-bottom: 20px;
+    }
+
+    .event-section {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .event-img {
+        width: 400px;
+        margin: 30px auto 0 auto;
+        display: block;
+    }
+
+    .event-text {
+        margin: 20px 0;
+    }
+    .event-btn {
+        margin-top: 10px;
+    }
+    .event-text h3 {
+        font-size: 35px;
+        line-height: 50px;
+    }
+
+
+
+    /* BACKGROUND VECTOR IMAGE RESPONSIVENESS */
+    .net-arrow-right {
+        width: 50%;
+    }
+    .net-arrow-left {
+        width: 50%;
+    }
+
+
+    /* COMMUNITY RESPONSIVENESS */
+    .community {
+        margin: 50px 10px;
+    }
+
+    .community-text h2 {
+        font-size: 38px;
+        line-height: 50px;
+    }
+    .community-text p {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .community-img {
+        flex-direction: column;
+    }
+
+    .comm-img-1 {
+        width: 300px;
+        height: 550px;
+        border-radius: 30px;
+    }
+    .comm-img-2 {
+        width: 300px;
+    }
+    .comm-img-3 {
+        width: 300px;
+        height: 200px;
+        border-radius: 30px;
+    }
+
+    .img-shape-grp {
+        flex-direction: column;
+    }
+
+
+    /* FAQ RESPONSIVENESS */
+    .faq {
+        flex-direction: column;
+        margin: 50px 10px;
+    }
+    
+    .faq-heading {
+        width: 100%;
+        text-align: center;
+    }
+
+    .faq-accordion {
+        width: 100%;
+    }
+    .accordion-header {
+        width: 100%;
+        height: 100%;
+        padding: 10px 0;
+    }
+
+
+
+    /* FOOTER RESPONSIVENESS */
+    footer {
+        padding: 20px 10px 5px 10px;
+    }
+    footer img {
+        height: 48px;
+        width: 150px;
+    }
+
+    .footer-part-1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-links-1 {
+        display: block;
+        margin: 20px 0;
+        font-size: 20px;
+    }
+
+    .footer-links-2 {
+        margin: 20px 0;
+        font-size: 20px;
+    }
+
+    .footer-questions h5{
+        font-size: 22px;
+        text-align: center;
+    }
+    .footer-questions p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .footer-questions-btn {
+        display: block;
+        margin: 20px auto;
+
+    }
+
+    .follow-us {
+        margin: 20px 0;
+    }
+    .footer-part-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .terms-policy {
+        margin: 20px 0;
+    }
+}
+
+/* RESPONSIVENESS ENDS HERE */
