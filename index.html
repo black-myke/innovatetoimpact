@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
 
 </head>
 
 <body>
-  <section class="hero_section_img">
-        <nav class="navbar navbar-expand-lg fixed-top" id="nav">
-            <div class="container d-flex justify-content-between align-items-center">
+    <section class="hero_section_img">
+        <nav class="navbar navbar-expand-lg fixed-top justify-content-between px-2" id="nav">
+            <div class="d-flex justify-content-between align-items-center w-100">
                 <!-- Logo -->
                 <a href="#" class="navbar-brand">
                     <img src="./assets/innovate_logo.png" alt="Logo" class="logo" />
@@ -30,7 +30,7 @@
 
                 <!-- Navbar links -->
                 <div class="collapse navbar-collapse d-lg-flex gap-2" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
+                    <!-- <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <a class="nav-link active text-white" aria-current="page" href="#">About Us </a>
                         </li>
@@ -49,9 +49,9 @@
                         <li class="nav-item"></li>
                         <a class="nav-link text-white" href="#">Contact</a>
                         </li>
-                    </ul>
-                    <div class="">
-                        <a href="#" class="btn custom-button">
+                    </ul> -->
+                    <div class="ms-auto">
+                        <a href=" #" class="btn custom-button">
                             Join The Community <span class="arrow">➔</span>
                         </a>
                     </div>
@@ -62,14 +62,17 @@
         </nav>
         <div class="words_div">
             <div class="">
-                <h2 class="text-white banner_text">A Community for Movers, Shakers, and Creators</h2>
+                <h2 class="text-white banner_text">A Community for <span class="movers">Movers</span>, <br
+                        class="movers_break"> <span class="shakers">Shakers</span>, <br class="break_shakers"> and
+                    <span class="creators_hero">Creators</span>
+                </h2>
                 <a href="#" class="btn custom_btn">Join the Community <span class="arrow">➔</span></a>
             </div>
             <p class="banner_paragraph">
                 Innovate to Impact brings together forward-thinkers, innovators, and changemakers from across the tech
-                industry. We're
+                industry. <br class="inustry_break"> We're
                 building a community where ideas thrive, projects take flight, and technology meets purpose. Join us in
-                shaping the
+                shaping <br class="shaping_break"> the
                 future of tech and making a difference.
             </p>
         </div>
@@ -113,8 +116,17 @@
         </section>
     </section>
     <section class="upcoming dark_bg">
-        <div class="row">
-            <div class="col-12 col-xl-6">
+        <!-- Video background -->
+        <video autoplay muted loop playsinline class="video-background" controls="false">
+            <source src="./assets/video/bg_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Gradient overlay -->
+        <div class="overlay"></div>
+
+        <div class="row items_center">
+            <div class="col-12 col-md-6">
                 <h6 class="u_event">Upcoming Event</h6>
                 <h2 class="level_up text-white">Level Up Your
                     <span class="future">Future <img src="./assets/red_ziggy.svg" alt="" class="red_ziggy">
@@ -129,7 +141,7 @@
                     we’re here to help you unlock new opportunities.
                 </p>
                 <div class="row margin_down">
-                    <div class="col-12 col-md-6 margin margin_top">
+                    <div class="col-6 margin margin_top">
                         <div class="margin">
                             <h2 class="big_title">500+</h2>
                             <h2 class="small_header">Universities, institutions</h2>
@@ -139,7 +151,7 @@
                             <h2 class="small_header">Locations</h2>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 margin margin_top">
+                    <div class="col-6 margin margin_top">
                         <div class="margin">
                             <h2 class="big_title">20+</h2>
                             <h2 class="small_header">Experienced Speakers</h2>
@@ -151,7 +163,7 @@
                     </div>
                 </div>
             </div>
-            <div class="images col-12 col-xl-6">
+            <div class="images col-12 col-md-6">
                 <img src="./assets/panel.png" alt="" class="panel image_card">
                 <img src="./assets/mentorship.png" alt="" class="mentorship image_card">
                 <img src="./assets/networking.png" alt="" class="networking image_card">
@@ -162,30 +174,32 @@
     </section>
 
     <!-- TESTIMONIALS SECTION -->
-     <img class="net-arrow test-net-arrow-left" src="/images/net-arrow-left.png" alt="">
-     <img class="net-arrow test-net-arrow-right" src="/images/net-arrow-right.png" alt="">
-     
-     <div class="testimonial">
+    <img class="net-arrow test-net-arrow-left" src="/images/net-arrow-left.png" alt="">
+    <img class="net-arrow test-net-arrow-right" src="/images/net-arrow-right.png" alt="">
+
+    <div class="testimonial">
         <img class="test-star black-star-1" src="/images/black-starr.png" alt="black star">
         <img class="test-star black-star-2" src="/images/black-starr.png" alt="black star">
         <img class="test-star red-star-1" src="/images/red-starr.png" alt="red star">
         <img class="test-star red-star-2" src="/images/red-starr.png" alt="red star">
-       
+
         <h2>TESTIMONIALS</h2>
         <h3>What our innovators say about our <span>Impact</span></h3>
 
         <div class="testimonial-video">
-            <iframe src="https://drive.google.com/file/d/106KhvZ8F2V_X-GOiSx_75HWPRaz6JvMD/preview" allow="autoplay" loading="lazy" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://drive.google.com/file/d/106KhvZ8F2V_X-GOiSx_75HWPRaz6JvMD/preview" allow="autoplay"
+                loading="lazy" frameborder="0" allowfullscreen></iframe>
         </div>
 
-        <button class="community-btn">Join The Community <span><img src="/images/arrowhead.png" alt="right angle bracket"></span></button>
-     </div>
+        <button class="community-btn">Join The Community <span><img src="/images/arrowhead.png"
+                    alt="right angle bracket"></span></button>
+    </div>
 
 
     <!-- EVENTS SECTION -->
-     <div class="events">
+    <div class="events">
         <h2>More of Our Events</h2>
-        
+
         <div class="event-section">
             <div class="event-text">
                 <h3>Mentorship</h3>
@@ -218,7 +232,7 @@
 
             <img class="event-img" src="/images/project-event.png" alt="">
         </div>
-     </div>
+    </div>
 
 
     <!-- BACKGROUND VECTOR IMAGE -->
@@ -230,21 +244,22 @@
         <div class="community-text">
             <h2>Join the Movement. Shape the Future.</h2>
             <p>
-                At Innovate to Impact, we believe in the power of 
-                collaboration. Whether you’re ready to volunteer 
-                your time or offer financial support, your involvement 
-                helps us empower the next generation of tech leaders. 
-                Together, we can drive innovation and create opportunities 
+                At Innovate to Impact, we believe in the power of
+                collaboration. Whether you’re ready to volunteer
+                your time or offer financial support, your involvement
+                helps us empower the next generation of tech leaders.
+                Together, we can drive innovation and create opportunities
                 across Nigeria.
             </p>
-            <button class="community-btn">Join The Community <span><img src="/images/arrowhead.png" alt="right angle bracket"></span></button>
+            <button class="community-btn">Join The Community <span><img src="/images/arrowhead.png"
+                        alt="right angle bracket"></span></button>
         </div>
 
         <div class="community-img">
             <div class="community-img-1">
                 <img class="comm-img comm-img-1" src="/images/group-photo.png" alt="group photo">
             </div>
-            
+
             <div class="community-img-2">
                 <div class="img-shape-grp">
                     <img class="comm-img comm-img-2" src="/images/man-in-jacket.png" alt="">
@@ -259,7 +274,7 @@
     </div>
 
     <!-- FAQ SECTION -->
-     <div class="faq">
+    <div class="faq">
         <h2 class="faq-heading">
             Frequently Asked Questions
         </h2>
@@ -306,14 +321,6 @@
             </div>
 
             <h3 class="accordion-header">
-                <span>Can I get a refund if I'm not satisfied?</span>
-                <span><img src="/images/accordion-arrow.png" alt=""></span>
-            </h3>
-            <div class="accordion-content">
-                <p>This is the content for section 2.</p>
-            </div>
-
-            <h3 class="accordion-header">
                 <span>Does Innovate to impact offer team plans?</span>
                 <span><img src="/images/accordion-arrow.png" alt=""></span>
             </h3>
@@ -321,7 +328,7 @@
                 <p>This is the content for section 2.</p>
             </div>
         </div>
-     </div>
+    </div>
 
 
     <!-- FOOTER SECTION -->
@@ -368,7 +375,7 @@
     </footer>
 
 
-    <script src="script.js" ></script>
+    <script src="script.js"></script>
     <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
         </script>

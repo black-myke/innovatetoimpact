@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lora:wght@400;500;700&display=swap');
+
 @font-face {
     font-family: Inter;
     src: url(./fonts/Inter/Inter-VariableFont.ttf);
 }
+
 @font-face {
     font-family: Lora-Italic;
     src: url(/fonts/Lora/Lora-Italic-VariableFont.ttf);
 }
+
 @font-face {
     font-family: Lora-Normal;
     src: url(/fonts/Lora/Lora-VariableFont.ttf);
@@ -31,7 +35,6 @@ button {
 /* Inter */
 /* Lora */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lora:wght@400;500;700&display=swap');
 
 /* Hero Section */
 .hero_section_img {
@@ -53,6 +56,13 @@ button {
     transition: background-color 0.3s ease !important;
 }
 
+.navbar {
+    width: 97% !important;
+    margin: 0 auto !important;
+    border-bottom-left-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
+}
+
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
 }
@@ -72,6 +82,7 @@ button {
     transition: all 0.3s ease-in-out;
     position: relative;
     box-shadow: 4px 2px 4px #F20034 !important;
+    font-family: 'Inter', sans-serif;
 }
 
 /* Arrow styling */
@@ -101,23 +112,36 @@ button {
 /* Hero Texts */
 .words_div {
     position: absolute;
-    bottom: 1rem;
-    padding: 0.75rem;
+    bottom: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .banner_text {
-    font-size: 5.25rem;
+    font-size: 5rem;
     line-height: 5.25rem;
     display: inline;
     font-family: 'Lora', sans-serif;
 }
 
+.movers,
+.shakers,
+.creators_hero {
+    text-shadow: 5px 0px #F20034;
+}
+
 .banner_paragraph {
-    font-size: 1.25rem;
-    font-weight: 400;
+    font-size: 1.125rem;
+    font-weight: 300;
     line-height: 1.75rem;
     color: #FFFFFF;
     font-family: 'Inter', sans-serif;
+    margin-top: 1.5rem;
+    margin-left: 0.25rem;
+}
+
+.break_shakers {
+    display: none;
 }
 
 .custom_btn {
@@ -172,20 +196,23 @@ button {
 }
 
 .big_text {
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight: 500;
-    line-height: 6rem;
+    line-height: 5rem;
     font-style: italic;
     font-family: 'Lora', sans-serif;
+    margin-top: 3rem;
 }
 
 .innovators {
-    padding: 0.625rem !important;
     margin-top: 2rem;
     background-image: url('./assets/left_vector.svg') !important;
     background-size: contain !important;
     background-position: left !important;
     background-repeat: no-repeat !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+    padding-bottom: 5rem;
 }
 
 .innovators_right {
@@ -196,14 +223,14 @@ button {
 }
 
 .star_img {
-    margin-top: -6.5rem;
-    margin-left: -4.5rem;
-    width: 5.375rem;
-    height: 5.375rem;
+    margin-top: -5rem;
+    margin-left: -3.5rem;
+    width: 5rem;
+    height: 5rem;
 }
 
 .some_cards {
-    margin-top: 4rem;
+    margin-top: 9rem;
     padding: 0.625rem !important;
 }
 
@@ -242,14 +269,36 @@ button {
     margin-top: 3rem;
 }
 
+/* Styling for video background */
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+    /* Ensure the video stays behind everything */
+}
+
+/* Gradient overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#000000e2, #000000e2, #000000e2, #3F000Ee2);
+    z-index: -1;
+}
+
 /* Upcoming events Section */
 .dark_bg {
-    background-image: linear-gradient(#000000ce, #000000ce), url('./assets/dark_bg.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     margin-top: 5rem;
+    position: relative;
+    z-index: 1;
 }
 
 .u_event {
@@ -258,6 +307,7 @@ button {
     line-height: 1.5rem;
     color: #F20034;
     font-family: 'Inter', sans-serif;
+    margin-left: 0.625rem;
 }
 
 .level_up {
@@ -328,6 +378,10 @@ button {
     margin-top: -11rem;
 }
 
+.panel {
+    margin-top: 1rem;
+}
+
 .interactive {
     margin-top: -10rem;
 }
@@ -347,27 +401,15 @@ button {
         padding: 10px 20px;
     }
 
+    .words_div,
+    .innovators {
+        padding: 0.625rem;
+    }
+
     .custom_btn {
         font-size: 16px;
         padding: 10px 20px;
         margin-top: 1.5rem;
-    }
-
-    .images {
-        /* display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 0.625rem; */
-        padding: 0.75rem;
-    }
-
-    .mentorship {
-        margin-left: auto;
-        transform: translateY(4rem);
-    }
-
-    .interactive {
-        margin-left: auto;
-        transform: translateY(4rem);
     }
 }
 
@@ -388,36 +430,138 @@ button {
         font-size: 1rem;
     }
 
-    .big_text {
-        font-size: 3rem;
-        line-height: 3rem;
+    .inustry_break,
+    .shaping_break,
+    .movers_break {
+        display: none !important;
     }
 
-    .star_img {
-        display: none;
+    .innovators {
+        margin-top: 0;
     }
 
+    .break_shakers {
+        display: inline;
+    }
+
+
+    .img_cards {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .margin_down {
+        display: flex !important;
+    }
+
+
+}
+
+/* 1024px media query */
+@media screen and (max-width: 1023px) {
     .red_ziggy {
-        display: none;
+        width: 5.75rem;
+        height: 1.03125rem;
+        transform: translateY(1.5rem);
+        margin-left: -7rem !important;
     }
 
-    .margin {
-        text-align: center;
-    }
 
     .images {
         margin-top: 3rem !important;
         justify-content: normal;
-        min-height: 69.3125rem;
-        overflow: auto;
+        height: auto;
+        overflow: none;
+        justify-content: center;
+        padding-bottom: 1.5rem;
+    }
+
+    .innovators {
+        padding-left: 0.625rem;
+        padding-right: 0.625rem;
+    }
+
+    .innovators,
+    .innovators_right {
+        background-image: none !important;
+    }
+
+    .u_event {
+        margin-top: 2rem !important;
+    }
+
+    .level_up {
+        margin-top: 2rem;
+        font-size: 2rem;
+        line-height: 2.175rem;
+    }
+
+    .custom_btn {
+        margin-left: 0;
+    }
+
+    .big_text {
+        font-size: 1.75rem;
+        line-height: 3rem;
+        margin-top: 0;
+    }
+
+    .star_img {
+        width: 1.375rem;
+        height: 1.375rem;
+        margin-top: -2rem;
+        margin-left: -1rem;
+    }
+
+    .some_cards {
+        margin-top: 0;
+    }
+
+    .dark_bg {
+        padding-left: 0.625rem;
+        padding-right: 0.625rem;
+    }
+
+    .left_text {
+        margin-top: 2rem;
+        font-size: 0.875rem;
+        line-height: 1.3125rem;
+    }
+
+    .big_title {
+        font-size: 2.5rem;
+        line-height: 1.9375rem;
+    }
+
+    .small_header {
+        font-size: 0.5625rem;
+        line-height: 0.75rem;
+    }
+
+    .mentorship,
+    .networking,
+    .design_thinking,
+    .panel,
+    .interactive {
+        margin-top: 0;
+        width: 6.5625rem;
+        height: 14.0625rem;
+    }
+
+    .design_thinking {
+        transform: translateY(0);
     }
 }
+
 
 /* TESTIMONIALS STYLING */
 .testimonial {
     position: relative;
     margin: 50px 50px 100px 50px;
 }
+
 .testimonial h2 {
     font-family: Inter;
     font-size: 14px;
@@ -436,7 +580,7 @@ button {
     color: #000000;
     width: 900px;
     text-align: center;
-    margin:20px auto;
+    margin: 20px auto;
 }
 
 .testimonial h3 span {
@@ -464,18 +608,22 @@ button {
 .test-star {
     position: absolute;
 }
+
 .red-star-1 {
     left: 100px;
     top: 0;
 }
+
 .red-star-2 {
     right: 120px;
     top: 350px;
 }
+
 .black-star-1 {
     right: 50px;
     top: 100px;
 }
+
 .black-star-2 {
     left: 100px;
     top: 500px;
@@ -485,6 +633,7 @@ button {
     left: 0;
     bottom: 2950px;
 }
+
 .test-net-arrow-right {
     right: 0;
     bottom: 2650px;
@@ -570,10 +719,12 @@ button {
     z-index: -1;
     height: 1319px;
 }
+
 .net-arrow-right {
     right: 0;
     bottom: 1100px;
 }
+
 .net-arrow-left {
     left: 0;
     bottom: 1500px;
@@ -588,6 +739,7 @@ button {
 .community-text {
     text-align: center;
 }
+
 .community-text h2 {
     font-family: Lora-Normal;
     font-size: 58px;
@@ -596,6 +748,7 @@ button {
     letter-spacing: -1.5px;
     text-align: center;
 }
+
 .community-text p {
     font-family: Inter;
     width: 1112px;
@@ -627,10 +780,12 @@ button {
     box-shadow: 3px 3px 0px 0px #F20034;
     margin-top: 30px;
 }
+
 .community-btn:hover {
     border: 0;
     box-shadow: 3px 3px 0px 0px #ffffff;
 }
+
 .community-btn span {
     margin-left: 15px;
 }
@@ -640,10 +795,12 @@ button {
     height: 750px;
     border-radius: 50px;
 }
+
 .comm-img-2 {
     width: 300px;
     height: 380px;
 }
+
 .comm-img-3 {
     width: 500px;
     height: 360px;
@@ -655,6 +812,7 @@ button {
     padding: 10px;
     object-fit: cover;
 }
+
 .community-img {
     display: flex;
     justify-content: center;
@@ -701,6 +859,7 @@ button {
     line-height: 28px;
     cursor: pointer;
 }
+
 .accordion-header span:nth-child(1) {
     width: 80%;
 }
@@ -722,15 +881,18 @@ footer {
     color: #F3F4F6;
     padding: 100px 100px 30px 100px;
 }
+
 footer a {
     color: #F3F4F6;
     text-decoration: none;
     display: block;
     font-weight: 400;
 }
+
 footer img {
     height: 58px;
 }
+
 footer hr {
     margin: 20px 0;
 }
@@ -745,6 +907,7 @@ footer hr {
     line-height: 2;
     font-family: Lora-Normal;
 }
+
 .footer-links-2 a {
     line-height: 2;
     font-family: Lora-Normal;
@@ -755,10 +918,12 @@ footer hr {
     line-height: 22px;
     color: #F3F4F6;
 }
-.footer-questions h5{
+
+.footer-questions h5 {
     font-size: 20px;
     font-weight: 300;
 }
+
 .footer-questions p {
     font-size: 15px;
     font-weight: 300;
@@ -813,6 +978,7 @@ footer hr {
 
 /* RESPONSIVENESS STARTS HERE */
 @media (max-width: 450px) {
+
     /* TESTIMONIAL RESPONSIVENESS */
     .testimonial {
         margin: 50px 10px;
@@ -837,6 +1003,7 @@ footer hr {
         left: 10px;
         top: 0;
     }
+
     .red-star-2 {
         right: 0;
         top: 250px;
@@ -846,6 +1013,7 @@ footer hr {
         right: 50px;
         top: 100px;
     }
+
     .black-star-2 {
         left: 25px;
         top: 350px;
@@ -877,9 +1045,11 @@ footer hr {
     .event-text {
         margin: 20px 0;
     }
+
     .event-btn {
         margin-top: 10px;
     }
+
     .event-text h3 {
         font-size: 35px;
         line-height: 50px;
@@ -902,6 +1072,7 @@ footer hr {
         font-size: 38px;
         line-height: 50px;
     }
+
     .community-text p {
         width: 100%;
         margin: 20px 0;
@@ -916,9 +1087,11 @@ footer hr {
         height: 550px;
         border-radius: 30px;
     }
+
     .comm-img-2 {
         width: 300px;
     }
+
     .comm-img-3 {
         width: 300px;
         height: 200px;
@@ -935,7 +1108,7 @@ footer hr {
         flex-direction: column;
         margin: 50px 10px;
     }
-    
+
     .faq-heading {
         width: 100%;
         text-align: center;
@@ -944,6 +1117,7 @@ footer hr {
     .faq-accordion {
         width: 100%;
     }
+
     .accordion-header {
         width: 100%;
         height: 100%;
@@ -956,6 +1130,7 @@ footer hr {
     footer {
         padding: 20px 10px 5px 10px;
     }
+
     footer img {
         height: 48px;
         width: 150px;
@@ -978,10 +1153,11 @@ footer hr {
         font-size: 20px;
     }
 
-    .footer-questions h5{
+    .footer-questions h5 {
         font-size: 22px;
         text-align: center;
     }
+
     .footer-questions p {
         font-size: 18px;
         text-align: center;
@@ -996,6 +1172,7 @@ footer hr {
     .follow-us {
         margin: 20px 0;
     }
+
     .footer-part-2 {
         flex-direction: column;
         align-items: center;
@@ -1007,4 +1184,3 @@ footer hr {
 }
 
 /* RESPONSIVENESS ENDS HERE */
-
