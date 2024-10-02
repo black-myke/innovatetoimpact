@@ -627,6 +627,9 @@ button {
     right: 120px;
     top: 350px;
 }
+.red-star-sm {
+    display: none;
+}
 
 .black-star-1 {
     right: 50px;
@@ -1004,9 +1007,9 @@ footer hr {
     }
 
     .testimonial h3 {
-        font-size: 40px;
+        font-size: 28px;
         line-height: 40px;
-        width: 350px;
+        width: 291px;
     }
 
     .testimonial-video {
@@ -1015,25 +1018,33 @@ footer hr {
     }
 
     .testimonial-video iframe {
-        width: 50%;
+        width: 60%;
     }
 
     .red-star-1 {
         left: 10px;
         top: 0;
+        display: none;
     }
 
     .red-star-2 {
         right: 0;
-        top: 250px;
+        top: 0;
+        display: none;
+    }
+    .red-star-sm {
+        display: block;
+        top: 100px;
+        left: 5px;
     }
 
     .black-star-1 {
-        right: 50px;
-        top: 100px;
+        right: 10px;
+        top: 0px;
     }
 
     .black-star-2 {
+        display: none;
         left: 25px;
         top: 350px;
     }
