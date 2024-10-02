@@ -999,7 +999,7 @@ footer hr {
 
 
 /* RESPONSIVENESS STARTS HERE */
-@media (max-width: 450px) {
+@media (max-width: 767px) {
 
     /* TESTIMONIAL RESPONSIVENESS */
     .testimonial {
