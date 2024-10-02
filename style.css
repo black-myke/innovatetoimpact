@@ -189,18 +189,23 @@ button {
 /* Empowering Innovators */
 .color_red {
     color: #F20034 !important;
+    font-family: Lora-Italic, sans-serif;
+    font-style: italic;
+    font-weight: 700;
 }
 
 .color_orange {
     color: #FF611E !important;
+    font-family: Lora-Italic, sans-serif;
+    font-style: italic;
+    font-weight: 700;
 }
 
 .big_text {
     font-size: 5rem;
     font-weight: 500;
     line-height: 5rem;
-    font-style: italic;
-    font-family: 'Lora', sans-serif;
+    font-family: Lora-Normal, sans-serif;
     margin-top: 3rem;
 }
 
@@ -312,11 +317,15 @@ button {
 
 .level_up {
     font-weight: 500;
-    font-style: italic;
     font-size: 3.75rem;
     line-height: 4.375rem;
     overflow-wrap: none;
     font-family: 'Lora', sans-serif;
+}
+.future {
+    font-family: Lora-Italic, sans-serif;
+    font-weight: 500;
+    font-style: italic;
 }
 
 .red_ziggy {
@@ -418,6 +427,7 @@ button {
         width: 97%;
         margin: 1rem auto;
     }
+
 }
 
 @media screen and (max-width: 767px) {
@@ -455,7 +465,6 @@ button {
     .margin_down {
         display: flex !important;
     }
-
 
 }
 
