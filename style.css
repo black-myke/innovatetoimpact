@@ -63,6 +63,11 @@ button {
     border-bottom-right-radius: 0.625rem;
 }
 
+/* .navbar-toggler {
+    display: inline-flex;
+    margin-left: auto !important;
+} */
+
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
 }
@@ -308,6 +313,7 @@ button {
     color: #F20034;
     font-family: 'Inter', sans-serif;
     margin-left: 0.625rem;
+    margin-top: 3rem;
 }
 
 .level_up {
@@ -418,6 +424,8 @@ button {
         width: 97%;
         margin: 1rem auto;
     }
+
+
 }
 
 @media screen and (max-width: 767px) {
