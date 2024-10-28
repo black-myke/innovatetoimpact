@@ -976,6 +976,10 @@ footer hr {
     margin: 20px 0;
 }
 
+.socials a {
+    display: inline-block;
+}
+
 .socials-img {
     height: 25px;
     width: 25px;
@@ -1128,6 +1132,10 @@ footer hr {
         font-size: 12px;
         line-height: 16px;
         width: 160px;
+    }
+
+    .colored-line {
+        width: 100%;
     }
 
 
